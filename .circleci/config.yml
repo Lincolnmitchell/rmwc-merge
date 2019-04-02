@@ -1,13 +1,13 @@
 jobs:
   build:
     docker:
-      - image: circleci/node:10.15-stretch-browsers
+      - image: circleci/node:8.15-stretch-browsers-legacy
     working_directory: ~/project/
     steps:
       - checkout
       - run:
           name: "Install dependencies"
-          command: npm install
+          command: yarn install
       - run:
           name: 'Push to UXPin'
-          command: ./node_modules/@uxpin/merge-cli/bin/uxpin-merge push --webpack-config ./webpack.config.js --wrapper ./src/Wrapper/UXPinWrapper.js
+          command: yarn run push
