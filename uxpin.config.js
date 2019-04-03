@@ -2,6 +2,12 @@ module.exports = {
     components: {
       categories: [
         {
+          name: "GeneralX",
+          include: [
+            "src/IconX/IconX.js"
+          ]
+        },
+        {
           name: "General",
           include: [
             "src/Typography/Typography.js",
