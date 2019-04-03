@@ -1,6 +1,6 @@
 :root {
-  --mdc-theme-primary: lime;
-  --mdc-theme-secondary:red;
+  --mdc-theme-primary: #303030;
+  --mdc-theme-secondary: #661fff;
   --mdc-theme-error: #b00020;
   --mdc-theme-background: #fff;
   --mdc-theme-surface: #fff;
